@@ -12,4 +12,6 @@ Cadastrar novo trabalho e prova - tela de cadastro de um novo trabalho ou prova 
 
 Configurações - Tela de configurações do aplicativo
 
-Ementa - Mostra em lista a ementa do curso." By: Albertklik
+Ementa - Mostra em lista a ementa do curso." 
+
+By: Albertklik
