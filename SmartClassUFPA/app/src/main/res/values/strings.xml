@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SmartClass UFPA</string>
+    <string name="title_activity_main">Home</string>
+    <string name="title_activity_main2">Settings</string>
 </resources>
