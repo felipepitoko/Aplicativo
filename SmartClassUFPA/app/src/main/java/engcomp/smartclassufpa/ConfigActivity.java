@@ -24,7 +24,7 @@ public class ConfigActivity extends BaseActivity {
 
         // ISSO AQUI É IMPORTANTE PARA QUE QUANDO O USARIO APERTE O BOTAO
         //VOLTAR O APP VOLTE SEMPRE PARA A TELA INICIAL
-        
+
         super.onBackPressed();
         Intent intent = new Intent(this, InicioActivity.class);
         startActivity(intent);
