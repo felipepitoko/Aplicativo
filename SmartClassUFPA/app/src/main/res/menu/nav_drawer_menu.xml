@@ -25,6 +25,11 @@
                             android:title="Trabalhos e Provas" />
 
                         <item
+                            android:id="@+id/nav_ementa"
+                            android:icon="@drawable/ic_library_books_white_24dp"
+                            android:title="Ementa" />
+
+                        <item
                             android:id="@+id/nav_settings"
                             android:icon="@drawable/ic_settings_white_24dp"
                             android:title="Configurações" />

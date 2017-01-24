@@ -131,6 +131,14 @@ public class BaseActivity extends AppCompatActivity {
 
         }
 
+        if (menuItem.getItemId() == R.id.nav_ementa) {
+            Intent intent = new Intent(this, EmentaActivity.class);
+            drawerLayout.closeDrawer(GravityCompat.START);
+            startActivity(intent);
+            overridePendingTransition(0, 0);
+
+        }
+
         if (menuItem.getItemId() == R.id.nav_home) {
             Intent intent = new Intent(this, InicioActivity.class);
             drawerLayout.closeDrawer(GravityCompat.START);
@@ -195,6 +203,9 @@ public class BaseActivity extends AppCompatActivity {
                 navigationView.getMenu().findItem(R.id.nav_settings).setChecked(true);
                 break;
             case 6:
+                navigationView.getMenu().findItem(R.id.nav_sobre).setChecked(true);
+                break;
+            case 7:
                 navigationView.getMenu().findItem(R.id.nav_sobre).setChecked(true);
                 break;
             default:
