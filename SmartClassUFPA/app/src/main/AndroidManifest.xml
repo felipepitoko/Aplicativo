@@ -55,6 +55,13 @@
 
         </activity>
 
+        <activity
+            android:name=".EmentaActivity"
+            android:label="Ementa"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
     </application>
 
 </manifest>
