@@ -2,21 +2,25 @@ package engcomp.smartclassufpa;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.view.GravityCompat;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.ActionBar;
+import android.view.MenuItem;
 import android.widget.FrameLayout;
 
-public class ConfigActivity extends BaseActivity {
+public class SobreActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_config);
+        setContentView(R.layout.activity_sobre);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setHomeAsUpIndicator(R.drawable.ic_arrow_back_white_24dp);
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         // CONFIGURAÇÕES E SOBRE NÃO POSSUEM NAVIGATION DRAWER
 
-
     }
-
 
     // SEMPRE SOBRESCREVER ESSE MÉTODO EM SOBRE E CONFIG
     @Override
@@ -29,6 +33,14 @@ public class ConfigActivity extends BaseActivity {
         Intent intent = new Intent(this, InicioActivity.class);
         startActivity(intent);
         overridePendingTransition(0, 0);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        if (item.getItemId() == android.R.id.home){
+            onBackPressed();
+            }
+        return super.onOptionsItemSelected(item);
     }
 
 
