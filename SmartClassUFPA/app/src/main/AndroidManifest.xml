@@ -58,7 +58,8 @@
         <activity
             android:name=".EmentaActivity"
             android:label="Ementa"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme"
+            android:configChanges="orientation|screenSize">
 
         </activity>
 
